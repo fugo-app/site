@@ -31,6 +31,12 @@ export default defineConfig({
 						{ label: 'Files', slug: 'inputs/files' },
 					],
 				},
+				{
+					label: 'API',
+					items: [
+						{ label: 'Querying Logs', slug: 'api/querying-logs' },
+					],
+				},
 			],
 		}),
 	],
