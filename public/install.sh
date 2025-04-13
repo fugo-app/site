@@ -36,7 +36,7 @@ main() {
     FUGO_VERSION=$(
         $CURL - https://api.github.com/repos/fugo-app/fugo/releases/latest | \
         grep -m1 -E '^\s*"tag_name":' | \
-        grep -Eo '\d+\.\d+\.\d+'
+        grep -Eo '[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+'
     )
 
     if [ -z "$FUGO_VERSION" ]; then
