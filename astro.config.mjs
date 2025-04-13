@@ -20,7 +20,8 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						{ label: 'Quick Start', slug: 'guides/quick-start' },
-						{ label: 'Data Fields', slug: 'guides/fields' },
+						{ label: 'Agents', slug: 'guides/agents' },
+						{ label: 'Fields', slug: 'guides/fields' },
 					],
 				},
 				{

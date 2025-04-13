@@ -1,5 +1,5 @@
 ---
-title: Data Fields
+title: Fields
 description: Data fields defines a structured data for your logs collection.
 ---
 
