@@ -37,6 +37,13 @@ export default defineConfig({
 						{ label: 'Querying Logs', slug: 'api/querying-logs' },
 					],
 				},
+				{
+					label: 'Examples',
+					items: [
+						{ label: 'Nginx', slug: 'examples/nginx' },
+						{ label: 'Kubernetes', slug: 'examples/kubernetes' },
+					],
+				},
 			],
 		}),
 	],
