@@ -59,9 +59,10 @@ main() {
     tar -C "$TMP_DIR" -xzf "$TMP_DIR/fugo.tar.gz"
 
     install -m 0755 -D "$TMP_DIR/fugo" /usr/local/bin/fugo
-    install -m 0755 -d /etc/fugo
-    install -m 0755 -d /etc/fugo/agents
-    install -m 0755 -d /var/lib/fugo
+    if [ $? -ne 0 ]; then
+        echo "Failed to install Fugo. Please check your permissions and try again." >&2
+        exit 1
+    fi
 
     cat <<EOF >/etc/systemd/system/fugo.service
 [Unit]
@@ -78,19 +79,6 @@ RestartSec=2
 
 [Install]
 WantedBy=multi-user.target
-EOF
-
-    cat <<EOF >/etc/fugo/config.yaml
-server:
-  listen: 127.0.0.1:2221
-
-storage:
-  sqlite:
-    path: /var/lib/fugo/fugo.db
-
-file_input:
-  offsets: /var/lib/fugo/offsets.yaml
-  limit: 100
 EOF
 
     systemctl -q daemon-reload

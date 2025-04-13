@@ -1,14 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
-import starlightThemeNova from 'starlight-theme-nova'
+import starlightThemeRapide from 'starlight-theme-rapide'
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://fugo.app',
 	integrations: [
 		starlight({
-			plugins: [starlightThemeNova()],
+			plugins: [starlightThemeRapide()],
 			title: 'Fugo',
 			favicon: 'favicon.svg',
 			logo: {

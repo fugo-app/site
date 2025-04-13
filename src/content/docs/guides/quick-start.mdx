@@ -1,0 +1,46 @@
+---
+title: Quick Start
+description: A quick start guide to get you up and running with Fugo.
+---
+import { Steps } from '@astrojs/starlight/components'
+
+Fugo is a lightweight and easy-to-use log collector.
+
+## Installation
+
+<Steps>
+
+1. Launch the installation script on your server:
+
+    ```bash
+    curl -sSfL https://fugo.app/install.sh | sudo sh
+    ```
+
+    <details>
+    <summary>What does this command do?</summary>
+
+    1. Check permissions and operating system
+    2. Download the latest version from [GitHub Release](https://github.com/fugo-app/fugo/releases)
+    3. Install Fugo binary to `/usr/local/bin/fugo`
+    4. Create a systemd service file at `/etc/systemd/system/fugo.service`
+    </details>
+
+2. Start
+
+    ```bash
+    sudo systemctl start fugo
+    ```
+
+3. Enable auto-start on system boot:
+
+    ```bash
+    sudo systemctl enable fugo
+    ```
+
+</Steps>
+
+## Manual Installation
+
+If you prefer to install Fugo manually, you can download it from the [GitHub Release](https://github.com/fugo-app/fugo/releases) page. Extract binary file from archive and place it in your `$PATH`. For example, you can place it in `/usr/local/bin`.
+
+That's it! You can now run Fugo from the command line. Default configuration file and all necessary directories will be created automatically.
