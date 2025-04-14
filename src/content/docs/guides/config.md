@@ -24,7 +24,7 @@ file_input:
 
 - `server`: Configuration for the HTTP API server.
 - `storage`: Configuration for the log storage backend.
-- `file_input`: Configuration for file-based input.
+- `file_input`: General configuration for file-based input.
 
 ## Server Configuration
 

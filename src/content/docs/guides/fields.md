@@ -1,13 +1,13 @@
 ---
 title: Fields
-description: Data fields defines a structured data for your logs collection.
+description: Fields define the structure of log records and are used to create the corresponding table in the database.
 ---
 
-Data fields defines a structured data for your logs collection.
+Fields define the structure of log records and are used to create the corresponding table in the database. When the structure changes, the system automatically performs a database migration.
 
 ## Fields Configuration
 
-Each field can be defined with next parameters:
+Each field can be defined with the following parameters:
 
 - `name`: The name of the field in the output
 - `source`: The source field to extract data (defaults to the field name)
