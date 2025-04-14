@@ -22,7 +22,7 @@ In the response, the record corresponding to the provided `_cursor` value is exc
 1. Make an initial request to get the first page with recent records:
 
 ```bash
-curl -G http://127.0.0.1:2221/api/query/example \
+curl -G http://127.0.0.1:2111/api/query/example \
      --data-urlencode "limit=10"
 ```
 
@@ -37,7 +37,7 @@ curl -G http://127.0.0.1:2221/api/query/example \
 3. Use that cursor in your next request with the `after` parameter to get the next page:
 
 ```bash
-curl -G https://example.com/api/query/nginx-access \
+curl -G http://127.0.0.1:2111/api/query/nginx-access \
      --data-urlencode "limit=10" \
      --data-urlencode "after=0000000000000cb2"
 ```
@@ -52,7 +52,7 @@ If you need to navigate backward through results:
 2. Use that cursor in a request with the `before` parameter:
 
 ```bash
-curl -G https://example.com/api/query/nginx-access \
+curl -G http://127.0.0.1:2111/api/query/nginx-access \
      --data-urlencode "limit=10" \
      --data-urlencode "before=0000000000000cb0"
 ```
@@ -62,7 +62,7 @@ curl -G https://example.com/api/query/nginx-access \
 You can combine pagination parameters with other query filters:
 
 ```bash
-curl -G https://example.com/api/query/nginx-access \
+curl -G http://127.0.0.1:2111/api/query/nginx-access \
      --data-urlencode "limit=10" \
      --data-urlencode "after=0000000000000cb2" \
      --data-urlencode "status__ne=200"

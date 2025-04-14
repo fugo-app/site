@@ -49,7 +49,7 @@ Supported formats:
 For example to get last 10 records from the nginx access log, with status not equal to 200:
 
 ```bash
-curl -G https://example.com/api/query/nginx-access \
+curl -G http://127.0.0.1:2111/api/query/nginx-access \
      --data-urlencode "limit=10" \
      --data-urlencode "status__ne=200"
 ```

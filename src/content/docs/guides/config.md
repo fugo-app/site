@@ -9,7 +9,7 @@ Fugo uses YAML configuration files. The main configuration file is located at `/
 
 ```yaml
 server:
-  listen: 127.0.0.1:2221
+  listen: 127.0.0.1:2111
   cors:
     origin: "*"
 
@@ -28,7 +28,7 @@ file_input:
 
 ## Server Configuration
 
-- `listen`: The address and port for the HTTP server (e.g., "127.0.0.1:2221" or ":2221").
+- `listen`: The address and port for the HTTP server (e.g., "127.0.0.1:2111" or ":2111").
 - `cors`: CORS configuration for the HTTP server. Default is disabled.
 
 ## SQLite Configuration

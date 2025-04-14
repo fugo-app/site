@@ -87,7 +87,7 @@ EOF
     echo "Fugo $FUGO_VERSION installed!"
     echo ""
     echo "       Configuration file: /etc/fugo/config.yaml"
-    echo "    HTTP API available at: http://127.0.0.1:2221"
+    echo "    HTTP API available at: http://127.0.0.1:2111"
     echo ""
     echo "You can manage service with next commands:"
     echo "            Start service: systemctl start fugo"
