@@ -9,6 +9,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [starlightThemeRapide()],
+			components: {
+				Head: './src/components/Head.astro',
+			},
 			title: 'Fugo',
 			favicon: 'favicon.svg',
 			logo: {
