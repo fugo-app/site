@@ -49,6 +49,15 @@ export default defineConfig({
 					],
 				},
 			],
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://sa.fugo.app/latest.js',
+						async: true,
+					},
+				},
+			],
 		}),
 	],
 });
