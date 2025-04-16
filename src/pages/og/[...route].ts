@@ -14,6 +14,11 @@ export const { getStaticPaths, GET } = OGImageRoute({
             path: './src/assets/images/og-logo.png',
         },
         bgGradient: [[255, 255, 255]],
+        border: {
+            color: [254, 154, 0],
+            width: 15,
+            side: 'block-end',
+        },
         fonts: [
             './src/assets/fonts/Roboto.ttf',
         ],
