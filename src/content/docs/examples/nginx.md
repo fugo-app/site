@@ -1,6 +1,6 @@
 ---
 title: Nginx Agent
-description: Configuration Fugo agent for Nginx
+description: Fugo agent configuration for collecting Nginx logs
 ---
 
 ## Access Log

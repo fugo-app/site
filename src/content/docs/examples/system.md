@@ -1,6 +1,6 @@
 ---
 title: System Metrics Agent
-description: Configuration Fugo agent for collecting system metrics
+description: Fugo agent configuration for collecting system metrics
 ---
 
 ## System Metrics

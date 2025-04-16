@@ -1,6 +1,6 @@
 ---
 title: System Metrics
-description: Collect system metrics data
+description: Collect basic system metrics such as CPU, memory, disk usage, and network statistics
 ---
 
 Collect basic system metrics such as CPU, memory, disk usage, and network statistics. This input is useful for monitoring the health and performance of your system.

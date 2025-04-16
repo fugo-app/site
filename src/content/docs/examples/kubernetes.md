@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Agent
-description: Configuration Fugo agent for Kubernetes or Podman
+description: Fugo agent configuration for collecting Kubernetes or Podman logs
 ---
 
 ## Podman and Kubernetes Logs
