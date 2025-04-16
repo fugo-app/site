@@ -68,8 +68,3 @@ retention:
   period: 3d
   interval: 1h
 ```
-
-- `name`: The name of the agent
-- `fields`: A list of fields to store in the log records
-- `file`: Configuration for file-based input
-- `retention`: Configuration for log retention

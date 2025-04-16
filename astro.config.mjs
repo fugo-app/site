@@ -32,6 +32,7 @@ export default defineConfig({
 					label: 'Inputs',
 					items: [
 						{ label: 'Files', slug: 'inputs/files' },
+						{ label: 'System Metrics', slug: 'inputs/system' },
 					],
 				},
 				{
@@ -46,6 +47,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Nginx', slug: 'examples/nginx' },
 						{ label: 'Kubernetes', slug: 'examples/kubernetes' },
+						{ label: 'System Metrics', slug: 'examples/system' },
 					],
 				},
 			],
