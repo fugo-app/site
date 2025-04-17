@@ -46,7 +46,7 @@ export default defineConfig({
 					label: 'Examples',
 					items: [
 						{ label: 'Nginx', slug: 'examples/nginx' },
-						{ label: 'Kubernetes', slug: 'examples/kubernetes' },
+						{ label: 'Podman', slug: 'examples/podman' },
 						{ label: 'System Metrics', slug: 'examples/system' },
 					],
 				},
