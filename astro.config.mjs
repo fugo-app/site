@@ -38,7 +38,7 @@ export default defineConfig({
 				{
 					label: 'API',
 					items: [
-						{ label: 'Querying Logs', slug: 'api/querying-logs' },
+						{ label: 'Querying Logs', slug: 'api/query' },
 						{ label: 'Pagination', slug: 'api/pagination' },
 					],
 				},
