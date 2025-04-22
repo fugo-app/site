@@ -1,6 +1,6 @@
 ---
-title: Querying Logs
-description: Access your logs with HTTP API
+title: Query
+description: API to access your logs
 ---
 
 Use GET requests to query logs. The API supports filtering and pagination.
@@ -9,7 +9,7 @@ Use GET requests to query logs. The API supports filtering and pagination.
 /api/query/{agent_name}?{query}
 ```
 
-- `agent_name`: The name of the agent to query logs from (same as yaml file with agent configuration).
+- `agent_name`: The name of the agent to query logs from.
 
 ## Query Parameters
 

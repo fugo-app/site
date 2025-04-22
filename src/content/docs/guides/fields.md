@@ -19,10 +19,10 @@ Each field can be defined with the following parameters:
 
 Field types used to convert the source field to the desired type. The following types are supported:
 
+- `time`: Date and time type (default for field with configured timestamp)
 - `string`: String type (default)
 - `int`: Integer type (64-bit signed integer)
 - `float`: Floating-point type (64-bit IEEE 754)
-- `time`: Date and time type (default for field with configured timestamp)
 
 ## Templates
 
