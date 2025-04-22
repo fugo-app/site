@@ -40,7 +40,7 @@ Use GET requests to query logs. The API supports filtering and pagination.
 
 Supported formats:
 
-- "2006-01-02 15:04:05": date and time format
+- "2006-01-02T15:04:05": date and time format
 - "2006-01-02": date only format
 - "5d": relative time (now minus 5 days), supported units are `s`, `m`, `h`, `d`
 
