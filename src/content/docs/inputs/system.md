@@ -34,17 +34,19 @@ By default, Fugo monitors the disk where `/var/lib` is located. You can specify 
 
 - `disk_total`: Total disk space in bytes.
 - `disk_usage`: Disk usage as a percentage.
+- `disk_read_bytes`: Delta of read bytes.
+- `disk_write_bytes`: Delta of written bytes.
 
 ### Network Statistics
 
 The system’s default route is used to determine which network interface to monitor.
 
 - `net_if`: Name of the interface.
-- `net_rx_bytes`: Received bytes.
-- `net_tx_bytes`: Transmitted bytes.
-- `net_rx_packets`: Received packets.
-- `net_tx_packets`: Transmitted packets.
-- `net_rx_errors`: Receive errors.
-- `net_tx_errors`: Transmit errors.
-- `net_rx_dropped`: Dropped incoming packets.
-- `net_tx_dropped`: Dropped outgoing packets.
+- `net_rx_bytes`: Delta of received bytes.
+- `net_tx_bytes`: Delta of transmitted bytes.
+- `net_rx_packets`: Delta of received packets.
+- `net_tx_packets`: Delta of transmitted packets.
+- `net_rx_errors`: Delta of receive errors.
+- `net_tx_errors`: Delta of transmit errors.
+- `net_rx_dropped`: Delta of dropped incoming packets.
+- `net_tx_dropped`: Delta of dropped outgoing packets.

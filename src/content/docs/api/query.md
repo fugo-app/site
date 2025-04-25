@@ -13,7 +13,7 @@ Use GET requests to query logs. The API supports filtering and pagination.
 
 ## Query Parameters
 
-- `limit`: Maximum number of records to return (default is 100).
+- `limit`: Maximum number of records to return (default is no limit).
 - `after`: Return records after the specified cursor.
 - `before`: Return records before the specified cursor.
 
@@ -43,6 +43,7 @@ Supported formats:
 - "2006-01-02T15:04:05": date and time format
 - "2006-01-02": date only format
 - "5d": relative time (now minus 5 days), supported units are `s`, `m`, `h`, `d`
+- "3600": relative time in seconds
 
 ## Curl
 
