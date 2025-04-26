@@ -7,8 +7,20 @@ Collect basic system metrics such as CPU, memory, disk usage, and network statis
 
 ## Configuration
 
+```yaml
+system:
+  interval: 10s
+  disk:
+    path: /
+  net:
+    interface: default
+```
+
 - `interval`: How often system metrics should be collected. It can be specified in seconds, minutes (e.g., `10s`, `1m`).
-- `disk_path`: Path to any directory on the disk you want to monitor. Fugo uses it to identify the correct disk and track its usage. If not specified, the directory `/var/lib` will be used.
+- `disk`: Disk metrics:
+    - `path`: Path to any directory on the disk you want to monitor. Fugo uses it to identify the correct disk and track its usage.
+- `net`: Network metrics:
+    - `interface`: Name of the network interface to monitor. Use `default` to monitor the interface with the default route.
 
 ## Metrics
 
@@ -30,16 +42,13 @@ Collect basic system metrics such as CPU, memory, disk usage, and network statis
 
 ### Disk Usage
 
-By default, Fugo monitors the disk where `/var/lib` is located. You can specify a different directory using the `disk_path` option in the configuration.
-
+- `disk_dev`: Device name of the disk.
 - `disk_total`: Total disk space in bytes.
 - `disk_usage`: Disk usage as a percentage.
 - `disk_read_bytes`: Delta of read bytes.
 - `disk_write_bytes`: Delta of written bytes.
 
 ### Network Statistics
-
-The system’s default route is used to determine which network interface to monitor.
 
 - `net_if`: Name of the interface.
 - `net_rx_bytes`: Delta of received bytes.

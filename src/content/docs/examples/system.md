@@ -10,7 +10,10 @@ Configuration for collecting system metrics `/etc/fugo/agents/system.yaml`:
 ```yaml
 system:
   interval: 10s
-  disk_path: /var/lib
+  disk:
+    path: /var/lib
+  net:
+    interface: default
 ```
 
-Metrics will be collected every 10 seconds. For disk usage, Fugo will monitor the disk where `/var/lib` is located. [Read more...](/inputs/system/)
+Metrics will be collected every 10 seconds. For disk usage, Fugo will monitor the disk where `/var/lib` is located. And for network metrics, Fugo will monitor the default interface. [Read more...](/inputs/system/)
