@@ -14,6 +14,29 @@ File-based input has the following configuration:
 - `regex`: A regex pattern to match the plain log lines.
 - `rotate`: Configuration for log rotation
 
+Example agent configuration for file-based input:
+
+```yaml
+fields:
+  - name: time
+    timestamp:
+      format: common
+  - name: level
+  - name: message
+
+file:
+  path: '/var/log/example.log'
+  format: plain
+  regex: '^(?P<time>[^ ]+) (?P<level>[^ ]+) (?P<message>.*)$'
+  rotate:
+    method: truncate
+    size: 10mb
+
+retention:
+  period: 3d
+  interval: 1h
+```
+
 ## Path
 
 The `path` can be a single file:

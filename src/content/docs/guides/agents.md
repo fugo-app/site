@@ -13,7 +13,27 @@ Agents can be defined with the following parameters:
 
 - `fields`: A list of fields to store in the log records
 - `file`: Configuration for file-based input
+- `system`: Configuration for system metrics input
 - `retention`: Configuration for log retention
+
+```yaml
+fields:
+  - name: time
+    timestamp:
+      format: common
+  - name: level
+  - name: message
+
+file:
+  # File-based input configuration
+
+system:
+  # System metrics input configuration
+
+retention:
+  period: 3d
+  interval: 1h
+```
 
 ## Fields
 
@@ -23,7 +43,8 @@ For more detailed information, see the [Fields documentation](/guides/fields/).
 
 Inputs is a data source for your logs. Read more:
 
-- [File-Based Input](/inputs/file/)
+- [File-Based Input](/inputs/files/)
+- [System Metrics](/inputs/system/)
 
 ## Retention Configuration
 

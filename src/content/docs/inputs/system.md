@@ -7,6 +7,16 @@ Collect basic system metrics such as CPU, memory, disk usage, and network statis
 
 ## Configuration
 
+System metrics input has the following configuration:
+
+- `interval`: How often system metrics should be collected. It can be specified in seconds, minutes (e.g., `10s`, `1m`).
+- `disk`: Disk metrics:
+    - `path`: Path to any directory on the disk you want to monitor. Fugo uses it to identify the correct disk and track its usage.
+- `net`: Network metrics:
+    - `interface`: Name of the network interface to monitor. Use `default` to monitor the interface with the default route.
+
+Example agent configuration for system metrics input:
+
 ```yaml
 system:
   interval: 10s
@@ -14,13 +24,11 @@ system:
     path: /
   net:
     interface: default
-```
 
-- `interval`: How often system metrics should be collected. It can be specified in seconds, minutes (e.g., `10s`, `1m`).
-- `disk`: Disk metrics:
-    - `path`: Path to any directory on the disk you want to monitor. Fugo uses it to identify the correct disk and track its usage.
-- `net`: Network metrics:
-    - `interface`: Name of the network interface to monitor. Use `default` to monitor the interface with the default route.
+retention:
+  period: 1d
+  interval: 10m
+```
 
 ## Metrics
 
