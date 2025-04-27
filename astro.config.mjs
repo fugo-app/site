@@ -31,7 +31,7 @@ export default defineConfig({
 				{
 					label: 'Inputs',
 					items: [
-						{ label: 'Files', slug: 'inputs/files' },
+						{ label: 'File', slug: 'inputs/file' },
 						{ label: 'System Metrics', slug: 'inputs/system' },
 					],
 				},

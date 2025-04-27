@@ -43,7 +43,7 @@ For more detailed information, see the [Fields documentation](/guides/fields/).
 
 Inputs is a data source for your logs. Read more:
 
-- [File-Based Input](/inputs/files/)
+- [File-Based Input](/inputs/file/)
 - [System Metrics](/inputs/system/)
 
 ## Retention Configuration
