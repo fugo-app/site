@@ -12,6 +12,7 @@ Each field can be defined with the following parameters:
 - `name`: The name of the field in the output
 - `source`: The source field to extract data (defaults to the field name)
 - `type`: The type of the field
+- `index`: Controls if the field is indexed (default: `false`)
 - `template`: A Go template to transform source fields into the new field
 - `timestamp`: Configuration for timestamp parsing
 
